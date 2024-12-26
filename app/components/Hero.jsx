@@ -10,7 +10,9 @@ const Hero = () => {
         src={"/assets/hero-background.jpg"}
         alt="Hero Image"
         fill
-        className="absolute h-full w-full opacity-30"
+        sizes="100%"
+        priority={true}
+        className="absolute object-cover opacity-30"
       />
       <div className="text-white paddings h-full flex flex-col relative">
         <div className="mt-20 flex flex-col items-center md:items-start">

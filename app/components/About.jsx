@@ -3,6 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { GiGraduateCap } from "react-icons/gi";
 import { experience } from "../utils";
 import SectionHeading from "./SectionHeading";
+import Image from "next/image";
 const About = () => {
   return (
     <section className="paddings py-20 gap-y-8 grid-cols-1 grid md:grid-cols-2 gap-4 bg-[#eff8ff]">
@@ -13,13 +14,32 @@ const About = () => {
       />
 
       <aside className="flex gap-3 h-80 md:h-full">
-        <figure className="h-full w-full bg-primary border-2 border-secondary rounded-3xl"></figure>
+        <figure className="h-full w-full bg-primary border-2 border-secondary rounded-3xl overflow-hidden relative">
+          <Image
+            src={"/assets/about1.webp"}
+            alt="About College"
+            fill
+            sizes="100%"
+            loading="lazy"
+            priority={false}
+          />
+        </figure>
         <div className="flex flex-col gap-3 w-full h-full">
           <div className="bg-secondary h-[30%] border-b-2 border-primary rounded-[0.7rem] text-white flex flex-col items-center justify-center">
             <h3 className="text-4xl font-bold">{`${experience}+`}</h3>
             <p className="text-sm font-semibold">Years of experience</p>
           </div>
-          <figure className="bg-secondary h-[70%] border-2 border-primary rounded-[1.3rem]"></figure>
+          <figure className="bg-secondary h-[70%] border-2 border-primary rounded-[1.3rem] overflow-hidden relative">
+            <Image
+              src={"/assets/about2.webp"}
+              alt="About College"
+              fill
+              sizes="100%"
+              loading="lazy"
+              priority={false}
+              className="object-cover"
+            />
+          </figure>
         </div>
       </aside>
       <aside className="space-y-3">

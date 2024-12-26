@@ -5,12 +5,13 @@ import { ourbestfeattures } from "../utils/features";
 const Features = () => {
   return (
     <section className="h-screen md:h-[600px] lg:h-screen xl:h-[600px] w-full bg-white relative overflow-hidden flex justify-between flex-col-reverse md:flex-row md:pt-10 pb-20">
-      <aside className="h-fit md:h-full bg-primary md:mt-5 flex py-10 relative gap-5 shadow w-full">
+      <aside className="h-fit md:h-full bg-primary-dark md:mt-5 flex py-10 relative gap-5 shadow w-full">
         <Image
           src={"/assets/atom-icon.jpg"}
-          height={150}
-          width={150}
-          className="opacity-20 mix-blend-multiply self-end -mt-5 absolute md:relative z-0"
+          alt="atom-icon"
+          height={120}
+          width={120}
+          className="opacity-20 h-auto w-auto mix-blend-multiply self-end -mt-5 absolute md:relative z-0"
         />
         <div className="text-white px-3 self-center space-y-3 z-10">
           <h2 className="text-[2rem] font-bold capitalize text-center md:text-left">
@@ -41,7 +42,12 @@ const Features = () => {
         </div>
       </aside>
       <aside className="bg-secondary h-full md:-mt-5 shadow relative w-full">
-        <Image src={"/assets/hero-background.jpg"} alt="feature image" fill objectFit="cover" />
+        <Image
+          src={"/assets/hero-background.jpg"}
+          alt="feature image"
+          fill
+          objectFit="cover"
+        />
       </aside>
     </section>
   );
