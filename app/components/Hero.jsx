@@ -12,7 +12,7 @@ const Hero = () => {
         fill
         sizes="100%"
         priority={true}
-        className="absolute object-cover opacity-30"
+        className="absolute object-cover opacity-30 z-0"
       />
       <div className="text-white paddings h-full flex flex-col relative">
         <div className="mt-20 flex flex-col items-center md:items-start">

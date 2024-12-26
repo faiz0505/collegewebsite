@@ -17,11 +17,11 @@ export const HoverLinksBox = ({ parentLink }) => {
 
       {parentLink.subLinks && parentLink.subLinks.length > 0 && (
         <div
-          className={`absolute inline-block left-0 top-full bg-white border rounded-md shadow-md w-48 ${
+          className={`absolute inline-block left-0 top-full bg-white border rounded-md shadow-md w-48 z-50 ${
             isHovered ? "md:block hidden" : "hidden"
           }`}
         >
-          <ul className="flex flex-col">
+          <ul className="flex flex-col z-50">
             {parentLink.subLinks.map((subLink) => (
               <li key={subLink.title} className="hover:bg-gray-100">
                 <Link

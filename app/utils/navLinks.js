@@ -86,5 +86,7 @@ export const navLinks = [
       },
     ],
   },
+  { title: "Services", type: "footer", href: "/services" },
+  { title: "Blogs", type: "footer", href: "/blogs" },
   { title: "Contact us", type: "single", href: "/contactus" },
 ];
