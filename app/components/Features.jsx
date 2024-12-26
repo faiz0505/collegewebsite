@@ -4,7 +4,7 @@ import { LiaReact } from "react-icons/lia";
 import { ourbestfeattures } from "../utils/features";
 const Features = () => {
   return (
-    <section className="h-screen md:h-[600px] lg:h-screen xl:h-[600px] w-full bg-white relative overflow-hidden flex justify-between flex-col-reverse md:flex-row md:pt-10 pb-20">
+    <section className="h-screen md:h-[600px] lg:h-screen xl:h-[600px] w-full bg-white relative overflow-hidden flex justify-between flex-col md:flex-row md:pt-10 pb-20">
       <aside className="h-fit md:h-full bg-primary-dark md:mt-5 flex py-10 relative gap-5 shadow w-full">
         <Image
           src={"/assets/atom-icon.jpg"}

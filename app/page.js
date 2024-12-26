@@ -21,7 +21,7 @@ const page = () => {
       <ScholarshipProgram />
       <Contact />
       <Feedbacks />
-      <SearchForCourse />
+      {/* <SearchForCourse /> */}
       <SubscribeUs />
     </main>
   );

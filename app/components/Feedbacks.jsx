@@ -63,7 +63,7 @@ const Feedbacks = () => {
           return (
             <div
               key={feedback._id}
-              className="h-fit shadow bg-[#eff8ff] hover:bg-white w-[32%] flex-none p-3 md:p-5 flex flex-col items-center snap-start mt-8 cursor-pointer"
+              className="h-fit shadow bg-[#eff8ff] hover:bg-white w-full md:w-[32%] flex-none p-3 md:p-5 flex flex-col items-center snap-center snap-mandatory md:snap-start mt-8 cursor-pointer"
             >
               <div className="text-secondary text-6xl">
                 <BiSolidQuoteAltRight />
