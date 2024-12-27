@@ -125,3 +125,41 @@ export const upcomingEvents = [
     image: "",
   },
 ];
+export const blogs = [
+  {
+    _id: "jshdf34",
+    title: "blog title",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adip occ lorem et justo e just another event name  in the future (Lorem ipsum dolor sit amet con dict lorem et justo e just another)",
+    date: {
+      day: 18,
+      month: "Desember",
+      year: 2024,
+    },
+    image: "",
+  },
+  {
+    _id: "jshd52y4bf34",
+    title: "blog title",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adip occ lorem et justo e just another event name  in the future (Lorem ipsum dolor sit amet con dict lorem et justo e just another)",
+    date: {
+      day: 21,
+      month: "November",
+      year: 2024,
+    },
+    image: "",
+  },
+  {
+    _id: "jshg47gdf34",
+    title: "blog title",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adip occ lorem et justo e just another event name  in the future (Lorem ipsum dolor sit amet con dict lorem et justo e just another)",
+    date: {
+      day: 31,
+      month: "December",
+      year: 2024,
+    },
+    image: "",
+  },
+];

@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import SearchForCourse from "./components/SearchForCourse";
 import Feedbacks from "./components/Feedbacks";
 import SubscribeUs from "./components/SubscribeUs";
+import Blogs from "./components/Blogs";
 
 const page = () => {
   return (
@@ -22,6 +23,7 @@ const page = () => {
       <Contact />
       <Feedbacks />
       {/* <SearchForCourse /> */}
+      <Blogs />
       <SubscribeUs />
     </main>
   );
