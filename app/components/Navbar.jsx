@@ -69,8 +69,8 @@ const Navbar = () => {
           College <span className="text-secondary">Logo</span>
         </div>
         <div
-          className={`flex flex-col md:flex-row justify-center items-center gap-5  md:h-full absolute top-14  md:top-0  md:py-0 right-0 md:relative w-full md:w-auto bg-secondary  md:bg-transparent backdrop-blur-3xl transition-all duration-300 ease-in-out md:translate-x-0 z-50 ${
-            isMenuOpen ? "h-fit py-5" : "h-0"
+          className={`flex flex-col md:flex-row justify-center items-center gap-5  md:h-full absolute top-14  md:top-0  md:py-0 right-0 md:relative w-full md:w-auto bg-secondary md:overflow-visible md:bg-transparent backdrop-blur-3xl transition-all duration-300 ease-in-out md:translate-x-0 ${
+            isMenuOpen ? "h-fit py-5" : "h-0 overflow-hidden"
           }`}
         >
           <ul className="flex flex-col md:flex-row justify-center gap-6 items-center font-semibold text-primary">
