@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const ScholarshipProgram = () => {
   return (
-    <section className="h-fit w-full py-8 relative bg-cyan-950 my-20">
+    <section className="h-fit w-full py-8 relative bg-cyan-950">
       <Image
         src={"/assets/scholarship.webp"}
         alt="scholarship program"

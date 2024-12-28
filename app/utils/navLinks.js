@@ -70,9 +70,9 @@ export const navLinks = [
     type: "multiple",
     subLinks: [
       {
-        title: "Page 1",
+        title: "Our Teachers",
         type: "single",
-        href: "/page/page1",
+        href: "/our-teachers",
       },
       {
         title: "Page 2",

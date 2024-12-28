@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { LiaReact } from "react-icons/lia";
 import { ourbestfeattures } from "../utils/features";
 const Features = () => {
   return (

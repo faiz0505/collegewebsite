@@ -79,8 +79,10 @@ const Navbar = () => {
                 <li key={link.title}>
                   <Link href={link.href}>{link.title}</Link>
                 </li>
-              ) : (
+              ) : link.type === "multiple" ? (
                 <HoverLinksBox key={link.title} parentLink={link} />
+              ) : (
+                ""
               );
             })}
           </ul>

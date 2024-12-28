@@ -5,7 +5,7 @@ import { faqs } from "../utils/faq";
 
 const Contact = () => {
   return (
-    <section className="w-full h-auto md:pb-14 lg:pb-20 md:h-[640px] lg:h-screen xl:h-[600px] paddings flex flex-col md:flex-row gap-14 mb-20 md:mb-0">
+    <section className="w-full h-auto md:pb-14 lg:pb-20 md:h-[640px] lg:h-screen xl:h-[600px] paddings flex flex-col md:flex-row gap-14 my-20 md:mb-0">
       <aside className="h-full w-full md:w-[60%] space-y-5 overflow-scroll scrollbar-hide">
         <h2 className="text-4xl font-semibold capitalize text-center md:text-start">
           Get Every single answer here.

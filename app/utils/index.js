@@ -163,3 +163,124 @@ export const blogs = [
     image: "",
   },
 ];
+export const ourTeachers = [
+  {
+    _id: "teacher1",
+    name: "Teacher Name",
+    profilePic: "",
+    subject: "CEO & Founder",
+    mobileNumber: "+91 8421932820",
+    email: "faizali786313@gmail.com",
+    experience: "10",
+    courses: 2,
+    about:
+      "lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word ",
+    socialLinks: [
+      { name: "facebook", href: "/" },
+      { name: "instagram", href: "/" },
+      { name: "twitter", href: "/" },
+    ],
+  },
+  {
+    _id: "teacher2",
+    name: "Teacher Name",
+    profilePic: "",
+    subject: "Co-Founder & Publisher",
+    mobileNumber: "+91 8421932820",
+    email: "faizali786313@gmail.com",
+    experience: "4",
+    courses: 1,
+    about:
+      "lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word ",
+    socialLinks: [
+      { name: "facebook", href: "/" },
+      { name: "instagram", href: "/" },
+      { name: "twitter", href: "/" },
+    ],
+  },
+  {
+    _id: "teacher3",
+    name: "Teacher Name",
+    profilePic: "",
+    subject: "Operating System",
+    mobileNumber: "+91 8421932820",
+    email: "faizali786313@gmail.com",
+    experience: "10",
+    courses: 3,
+    about:
+      "lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word ",
+    socialLinks: [
+      { name: "facebook", href: "/" },
+      { name: "instagram", href: "/" },
+      { name: "twitter", href: "/" },
+    ],
+  },
+  {
+    _id: "teacher4",
+    name: "Teacher Name",
+    profilePic: "",
+    subject: "C programming",
+    mobileNumber: "+91 8421932820",
+    email: "faizali786313@gmail.com",
+    experience: "15",
+    courses: 2,
+    about:
+      "lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word ",
+    socialLinks: [
+      { name: "facebook", href: "/" },
+      { name: "instagram", href: "/" },
+      { name: "twitter", href: "/" },
+    ],
+  },
+  {
+    _id: "teacher5",
+    name: "Teacher Name",
+    profilePic: "",
+    subject: "Java",
+    mobileNumber: "+91 8421932820",
+    email: "faizali786313@gmail.com",
+    experience: "20",
+    courses: 2,
+    about:
+      "lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word ",
+    socialLinks: [
+      { name: "facebook", href: "/" },
+      { name: "instagram", href: "/" },
+      { name: "twitter", href: "/" },
+    ],
+  },
+  {
+    _id: "teacher6",
+    name: "Teacher Name",
+    profilePic: "",
+    subject: "Networking",
+    mobileNumber: "+91 8421932820",
+    email: "faizali786313@gmail.com",
+    experience: "7",
+    courses: 1,
+    about:
+      "lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word ",
+    socialLinks: [
+      { name: "facebook", href: "/" },
+      { name: "instagram", href: "/" },
+      { name: "twitter", href: "/" },
+    ],
+  },
+  {
+    _id: "teacher7",
+    name: "Teacher Name",
+    profilePic: "",
+    subject: "asp.net",
+    mobileNumber: "+91 8421932820",
+    email: "faizali786313@gmail.com",
+    experience: "30",
+    courses: 1,
+    about:
+      "lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word lorem Ips incorrectly incorrectly interpreted as a synonym for the word ",
+    socialLinks: [
+      { name: "facebook", href: "/" },
+      { name: "instagram", href: "/" },
+      { name: "twitter", href: "/" },
+    ],
+  },
+];

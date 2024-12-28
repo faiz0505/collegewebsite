@@ -4,6 +4,7 @@ import Link from "next/link";
 import { HoverLinksBox } from "./ui/HoverLinksBox";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
+import { socialLinks } from "../utils/socialLinks";
 const Footer = () => {
   return (
     <footer className="w-full">
@@ -18,6 +19,19 @@ const Footer = () => {
             veritatis atque delectus quasi. Atque magnam labore nulla sapiente
             nemo non dolorum recusandae sunt.
           </p>
+          <div className="flex items-center gap-3 mt-6">
+            {socialLinks.map((socialLink) => {
+              return (
+                <Link
+                  key={socialLink.name}
+                  href={socialLink.href}
+                  className="h-10 w-10 flex justify-center items-center rounded-full bg-[#365864] text-white hover:bg-secondary text-xl"
+                >
+                  {socialLink.icon}
+                </Link>
+              );
+            })}
+          </div>
         </aside>
         <aside className="place-self-center">
           <h4 className="text-xl font-bold relative before:absolute before:w-14 before:h-[1px] before:bg-secondary before:-bottom-1 text-[#f3f4f5] mb-6">
@@ -39,7 +53,7 @@ const Footer = () => {
           <h4 className="text-xl font-bold relative before:absolute before:w-14 before:h-[1px] before:bg-secondary before:-bottom-1 text-[#f3f4f5] mb-6 text-center md:text-left">
             Contact Us
           </h4>
-          <div className="space-y-4 flex flex-col items-center md:items-start gap-y-3">
+          <div className="space-y-4 flex flex-col items-center md:items-start">
             <div className="flex gap-3 items-center flex-col md:flex-row">
               <div className="h-10 w-10 bg-secondary rounded-full flex justify-center items-center text-white text-lg flex-none">
                 <FaLocationDot />
@@ -67,13 +81,12 @@ const Footer = () => {
               <div className="h-10 w-10 bg-secondary rounded-full flex justify-center items-center text-white text-lg flex-none">
                 <IoMdMail />
               </div>
-              <div>
-                <p className="text-xs opacity-75 cursor-pointer text-center md:text-left">
-                  faizali786313@gmail.com
-                  <br />
-                  yourcollegeemail123@gmail.com
-                </p>
-              </div>
+
+              <p className="text-xs opacity-75 cursor-pointer text-center md:text-left">
+                faizali786313@gmail.com
+                <br />
+                yourcollegeemail123@gmail.com
+              </p>
             </div>
           </div>
         </aside>

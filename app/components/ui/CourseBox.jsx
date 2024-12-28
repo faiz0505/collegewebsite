@@ -19,7 +19,7 @@ const CourseBox = ({ courseDetail }) => {
         <h2 className="text-xl font-bold capitalize opacity-90">{title}</h2>
         <p className="text-xs opacity-50 font-semibold">{description}</p>
         <Link
-          href={`/course/${_id}`}
+          href={`/courses/course/${_id}`}
           className="flex items-center gap-2 text-secondary text-sm font-bold"
         >
           Read More{" "}
