@@ -13,8 +13,8 @@ const page = async ({ params }) => {
   return (
     <main>
       <PageHeader title={"Teacher Details"} />
-      <section className="paddings my-20 grid grid-cols-10">
-        <aside className="col-span-3 relative">
+      <section className="paddings my-20 grid md:grid-cols-10 gap-y-8">
+        <aside className="md:col-span-3 w-full h-96 md:h-auto relative">
           <Image
             src={"/assets/profile.jpg"}
             alt={teacher.name}
@@ -24,12 +24,12 @@ const page = async ({ params }) => {
             className="object-cover"
           />
         </aside>
-        <aside className="col-span-7 px-2 md:px-6 lg:px-8 2xl:px-12">
-          <h2 className="text-3xl font-bold opacity-80 ">{teacher.name}</h2>
-          <p className="text-xs text-gray-600">
+        <aside className="md:col-span-7 px-2 md:px-6 lg:px-8 2xl:px-12">
+          <h2 className="text-3xl font-bold opacity-80 text-center md:text-left">{teacher.name}</h2>
+          <p className="text-xs text-gray-600 text-center md:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
-          <div className="bg-[#f5f5f5] px-2 md:px-4 py-4 flex justify-between rounded-lg my-6">
+          <div className="bg-[#f5f5f5] px-2 md:px-4 py-4 flex flex-col md:flex-row gap-y-4 justify-between rounded-lg my-6">
             <div className="flex flex-col items-center">
               <h6 className="text-xl font-bold">{teacher.courses}</h6>
               <p className="text-sm text-gray-700">Course</p>
@@ -40,7 +40,7 @@ const page = async ({ params }) => {
             </div>
 
             <div className="flex flex-col gap-y-2">
-              <div className="flex gap-3 items-center flex-col md:flex-row">
+              <div className="flex gap-3 items-center justify-center md:justify-start">
                 <div className=" text-secondary  text-lg flex-none">
                   <FaPhone />
                 </div>
@@ -49,7 +49,7 @@ const page = async ({ params }) => {
                   {teacher.mobileNumber}
                 </p>
               </div>
-              <div className="flex gap-3 items-center flex-col md:flex-row">
+              <div className="flex gap-3 items-center justify-center md:justify-start">
                 <div className=" text-secondary  text-lg flex-none">
                   <IoMdMail />
                 </div>
@@ -61,9 +61,9 @@ const page = async ({ params }) => {
             </div>
           </div>
           <div>
-            <h3 className="text-2xl font-bold">About</h3>
-            <p className="text-sm text-gray-700">{teacher.about}</p>
-            <div className="flex justify-between items-center mt-6">
+            <h3 className="text-2xl font-bold text-center md:text-left">About</h3>
+            <p className="text-sm text-gray-700 text-center md:text-left">{teacher.about}</p>
+            <div className="flex justify-between items-center mt-6 flex-col md:flex-row gap-y-4">
               <div className="flex gap-3">
                 {teacher.socialLinks.map((socialLink) => {
                   return (

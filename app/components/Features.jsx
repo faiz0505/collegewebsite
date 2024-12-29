@@ -45,7 +45,9 @@ const Features = () => {
           src={"/assets/hero-background.jpg"}
           alt="feature image"
           fill
-          objectFit="cover"
+          sizes="100%"
+          priority={false}
+          className="object-cover"
         />
       </aside>
     </section>

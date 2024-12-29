@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 export const HoverLinksBox = ({ parentLink }) => {
@@ -9,16 +9,20 @@ export const HoverLinksBox = ({ parentLink }) => {
     <li
       className="relative group"
       onMouseEnter={() => setIsHovered(true)}
+      // onClick={(e) => {
+      //   // e.preventDefault();
+      //   setIsHovered(true);
+      // }}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Link href={parentLink.href || "#"} className="hover:text-blue-500">
+      <span className="hover:text-blue-500 cursor-pointer">
         {parentLink.title}
-      </Link>
+      </span>
 
       {parentLink.subLinks && parentLink.subLinks.length > 0 && (
         <div
           className={`absolute inline-block left-0 top-full bg-white border rounded-md shadow-md w-48 z-50 ${
-            isHovered ? "md:block hidden" : "hidden"
+            isHovered ? "block" : "hidden"
           }`}
         >
           <ul className="flex flex-col z-50">

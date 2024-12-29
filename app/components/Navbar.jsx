@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { socialLinks } from "../utils/socialLinks";
 import Link from "next/link";
 import { FiPhoneCall } from "react-icons/fi";
@@ -9,10 +9,15 @@ import { navLinks } from "../utils/navLinks";
 import { HoverLinksBox } from "./ui/HoverLinksBox";
 import { SlMenu } from "react-icons/sl";
 import { RxCross2 } from "react-icons/rx";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen((pre) => !pre);
+  const pathname = usePathname();
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
   return (
     <nav className="relative w-full z-50">
       <div className="flex flex-col md:flex-row justify-between items-center relative md:h-14 w-full text-white">

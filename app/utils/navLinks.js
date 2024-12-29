@@ -4,12 +4,11 @@ export const navLinks = [
   {
     title: "Courses",
     type: "multiple",
-    href: "/courses",
     subLinks: [
       {
-        title: "Course 1",
+        title: "Courses",
         type: "single",
-        href: "/course/course1",
+        href: "/courses",
       },
       {
         title: "Course 2",
@@ -36,12 +35,11 @@ export const navLinks = [
   {
     title: "Events",
     type: "multiple",
-    href: "/events",
     subLinks: [
       {
-        title: "Event 1",
+        title: "Events",
         type: "single",
-        href: "/event/event1",
+        href: "/events",
       },
       {
         title: "Event 2",
@@ -75,9 +73,9 @@ export const navLinks = [
         href: "/our-teachers",
       },
       {
-        title: "Page 2",
+        title: "Blogs",
         type: "single",
-        href: "/page/page2",
+        href: "/blogs",
       },
       {
         title: "Page 3",

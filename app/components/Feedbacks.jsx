@@ -58,12 +58,12 @@ const Feedbacks = () => {
     <section className="paddings flex flex-col items-center mb-20 h-fit">
       <SectionHeading title={"our team members"} icon={<FaPeopleGroup />} />
       <h1 className="text-4xl font-bold mt-1">Feedbacks</h1>
-      <div className="w-full gap-5 overflow-x-scroll flex scrollbar-hide snap-x">
+      <div className="w-full gap-5 overflow-x-scroll flex scrollbar-hide snap-x items-start">
         {feedbacksData.map((feedback) => {
           return (
             <div
               key={feedback._id}
-              className="h-fit shadow bg-[#eff8ff] hover:bg-white w-full md:w-[32%] flex-none p-3 md:p-5 flex flex-col items-center snap-center snap-mandatory md:snap-start mt-8 cursor-pointer"
+              className="h-80 shadow bg-[#eff8ff] hover:bg-white w-full sm:w-[50%] md:w-[32%] flex-none p-3 md:p-5 flex flex-col items-center justify-center snap-center snap-mandatory md:snap-start mt-8 cursor-pointer"
             >
               <div className="text-secondary text-6xl">
                 <BiSolidQuoteAltRight />

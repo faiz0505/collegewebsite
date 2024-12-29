@@ -9,7 +9,7 @@ const OurTeacherBox = ({ name, profilePic, subject, socialLinks, id }) => {
   const router = useRouter();
   return (
     <div
-      className="w-full max-w-[250px] py-8 flex flex-col items-center bg-white rounded shadow-sm cursor-pointer"
+      className="w-80 py-8 flex flex-col items-center bg-white rounded shadow-sm cursor-pointer"
       onClick={() => router.push(`/our-teachers/${id}`)}
     >
       <figure className="h-20 w-20 bg-secondary rounded-full relative overflow-hidden">

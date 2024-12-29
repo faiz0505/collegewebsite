@@ -19,7 +19,7 @@ const Footer = () => {
             veritatis atque delectus quasi. Atque magnam labore nulla sapiente
             nemo non dolorum recusandae sunt.
           </p>
-          <div className="flex items-center gap-3 mt-6">
+          <div className="flex items-center justify-center md:justify-start gap-3 mt-6">
             {socialLinks.map((socialLink) => {
               return (
                 <Link
@@ -33,7 +33,7 @@ const Footer = () => {
             })}
           </div>
         </aside>
-        <aside className="place-self-center">
+        <aside className=" justify-self-center">
           <h4 className="text-xl font-bold relative before:absolute before:w-14 before:h-[1px] before:bg-secondary before:-bottom-1 text-[#f3f4f5] mb-6">
             Our Links{" "}
           </h4>
