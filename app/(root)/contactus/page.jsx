@@ -1,9 +1,9 @@
 import React from "react";
-import PageHeader from "../components/ui/PageHeader";
-import SectionHeading from "../components/SectionHeading";
+import PageHeader from "../../components/ui/PageHeader";
+import SectionHeading from "../../components/SectionHeading";
 import { FiPhoneCall, FiMapPin } from "react-icons/fi";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import CustomInput from "../components/ui/CustomInput";
+import CustomInput from "../../components/ui/CustomInput";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const page = () => {
@@ -76,8 +76,11 @@ const page = () => {
             className="w-full col-span-full bg-white border-none outline-none px-3 py-2 rounded-sm placeholder:capitalize placeholder:text-gray-500 placeholder:text-sm placeholder:font-semibold"
           ></textarea>
           <div className="place-self-center col-start-2">
-            <button className="px-5 py-3 outline-none bg-secondary text-white font-semibold rounded-sm capitalize text-sm flex gap-2 items-center mx-auto md:mx-0" type="submit">
-             Make An request
+            <button
+              className="px-5 py-3 outline-none bg-secondary text-white font-semibold rounded-sm capitalize text-sm flex gap-2 items-center mx-auto md:mx-0"
+              type="submit"
+            >
+              Make An request
               <span>
                 <FaArrowRightLong />
               </span>

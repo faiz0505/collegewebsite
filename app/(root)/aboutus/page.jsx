@@ -1,9 +1,9 @@
 import React from "react";
-import PageHeader from "../components/ui/PageHeader";
-import About from "../components/About";
-import ScholarshipProgram from "../components/ScholarshipProgram";
-import Contact from "../components/Contact";
-import Feedbacks from "../components/Feedbacks";
+import PageHeader from "../../components/ui/PageHeader";
+import About from "../../components/About";
+import ScholarshipProgram from "../../components/ScholarshipProgram";
+import Contact from "../../components/Contact";
+import Feedbacks from "../../components/Feedbacks";
 import Image from "next/image";
 import { GrMap } from "react-icons/gr";
 import { DiAtom } from "react-icons/di";

@@ -1,7 +1,7 @@
 import React from "react";
 import CustomInput from "./CustomInput";
 
-const CustomSearch = ({ placeholder, name, variant, icon }) => {
+const CustomSearch = ({ placeholder, name, variant, icon, text }) => {
   return (
     <div
       className={`flex items-center  ${
@@ -16,7 +16,7 @@ const CustomSearch = ({ placeholder, name, variant, icon }) => {
             : "bg-primary text-lg py-2 px-3"
         } outline-none  text-white font-semibold  uppercase flex items-center text-nowrap`}
       >
-        {icon || "Search for course"}
+        {icon || text || "Search for course"}
       </button>
     </div>
   );

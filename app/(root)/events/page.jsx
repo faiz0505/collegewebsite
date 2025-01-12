@@ -1,8 +1,8 @@
 import React from "react";
-import PageHeader from "../components/ui/PageHeader";
-import { upcomingEvents } from "../utils";
-import EventBox from "../components/ui/EventBox";
-import Pagination from "../components/ui/Pagination";
+import PageHeader from "../../components/ui/PageHeader";
+import { upcomingEvents } from "../../utils";
+import EventBox from "../../components/ui/EventBox";
+import Pagination from "../../components/ui/Pagination";
 
 const page = () => {
   return (

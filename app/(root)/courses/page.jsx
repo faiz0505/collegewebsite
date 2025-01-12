@@ -1,9 +1,9 @@
 import React from "react";
-import PageHeader from "../components/ui/PageHeader";
-import CustomSearch from "../components/ui/CustomSearch";
-import Blogs from "../components/Blogs";
-import OurCourses from "../components/OurCourses";
-import Courses from "../components/Courses";
+import PageHeader from "../../components/ui/PageHeader";
+import CustomSearch from "../../components/ui/CustomSearch";
+import Blogs from "../../components/Blogs";
+import OurCourses from "../../components/OurCourses";
+import Courses from "../../components/Courses";
 
 const page = () => {
   return (

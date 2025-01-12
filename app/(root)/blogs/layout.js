@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import CustomSearch from "../components/ui/CustomSearch";
-import PageHeader from "../components/ui/PageHeader";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+import CustomSearch from "../../components/ui/CustomSearch";
+import PageHeader from "../../components/ui/PageHeader";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 
 export default function RootLayout({ children }) {
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <>
       <PageHeader title={"Blogs"} />
       <main className="w-full grid grid-cols-12 gap-6 paddings my-20">
-        <aside className="col-span-full sm:col-span-7 md:col-span-8 lg:col-span-9 bg-primary">
+        <aside className="col-span-full sm:col-span-7 md:col-span-8 lg:col-span-9 ">
           {children}
         </aside>
         <aside className="col-span-full sm:col-span-5 md:col-span-4 lg:col-span-3 ">

@@ -70,7 +70,7 @@ export const programs = [
 export const upcomingEvents = [
   {
     _id: "jshdf34",
-    name: "event name",
+    name: "event name sdhfgs sgdfssdf sj df",
     description:
       "lorem ipsum dolor sit amet, consectetur adip occ lorem et justo e just another event name  in the future (Lorem ipsum dolor sit amet con dict lorem et justo e just another)",
     date: {
@@ -282,5 +282,67 @@ export const ourTeachers = [
       { name: "instagram", href: "/" },
       { name: "twitter", href: "/" },
     ],
+  },
+];
+
+export const comments = [
+  {
+    name: "Rosalina Kelian",
+    date: "24th March 2022",
+    text:
+      "For all the assets is hard and time-consuming technical work. The result needs to be seamless and delightful.",
+    avatar: "https://randomuser.me/api/portraits/men/45.jpg", // Replace with real image URLs
+    replies: [],
+  },
+  {
+    name: "John Doe",
+    date: "24th March 2022",
+    text:
+      "Building a customer experience that will be visited by millions, the goal is to eliminate technical challenges.",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg", // Replace with real image URLs
+    replies: [
+      {
+        name: "Rosalina Kelian",
+        date: "24th March 2022",
+        text:
+          "For all the assets is hard and time-consuming technical work. The result needs to be seamless and delightful.",
+        avatar: "https://randomuser.me/api/portraits/men/45.jpg", // Replace with real image URLs}
+      },
+    ],
+  },
+  {
+    name: "Arista Williamson",
+    date: "24th March 2022",
+    text:
+      "Unlocking such features and making them all work nicely required significant collaboration.",
+    avatar: "https://randomuser.me/api/portraits/women/45.jpg", // Replace with real image URLs
+    replies: [],
+  },
+];
+
+export const teachers = [
+  {
+    id: 1,
+    name: "Dr. John Doe",
+    designation: "Professor",
+    department: "Computer Science",
+    email: "johndoe@example.com",
+    phone: "123-456-7890",
+  },
+  {
+    id: 2,
+    name: "Dr. Jane Smith",
+    designation: "Associate Professor",
+    department: "Physics",
+    email: "janesmith@example.com",
+    phone: "987-654-3210",
+  },
+  {
+    id: 3,
+    name: "Dr. Emily Johnson",
+    designation: "Assistant Professor",
+    department: "Mathematics",
+    email: "emilyjohnson@example.com",
+    phone: "555-666-7777",
   },
 ];

@@ -25,7 +25,9 @@ const page = async ({ params }) => {
           />
         </aside>
         <aside className="md:col-span-7 px-2 md:px-6 lg:px-8 2xl:px-12">
-          <h2 className="text-3xl font-bold opacity-80 text-center md:text-left">{teacher.name}</h2>
+          <h2 className="text-3xl font-bold opacity-80 text-center md:text-left">
+            {teacher.name}
+          </h2>
           <p className="text-xs text-gray-600 text-center md:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
@@ -61,8 +63,12 @@ const page = async ({ params }) => {
             </div>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-center md:text-left">About</h3>
-            <p className="text-sm text-gray-700 text-center md:text-left">{teacher.about}</p>
+            <h3 className="text-2xl font-bold text-center md:text-left">
+              About
+            </h3>
+            <p className="text-sm text-gray-700 text-center md:text-left">
+              {teacher.about}
+            </p>
             <div className="flex justify-between items-center mt-6 flex-col md:flex-row gap-y-4">
               <div className="flex gap-3">
                 {teacher.socialLinks.map((socialLink) => {

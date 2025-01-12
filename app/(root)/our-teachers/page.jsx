@@ -1,7 +1,7 @@
 import React from "react";
-import PageHeader from "../components/ui/PageHeader";
-import { ourTeachers } from "../utils";
-import OurTeacherBox from "../components/ui/OurTeacherBox";
+import PageHeader from "../../components/ui/PageHeader";
+import { ourTeachers } from "../../utils";
+import OurTeacherBox from "../../components/ui/OurTeacherBox";
 
 const page = () => {
   return (
