@@ -1,12 +1,15 @@
+import { fetchAllEvents } from "@/app/actions/event.actions";
 import EditEvents from "@/app/components/admin/EditEvents";
 import Notifications from "@/app/components/admin/Notifications";
-import React from "react";
+import React, { Suspense } from "react";
 import { FaFemale, FaMale } from "react-icons/fa";
 import { FaBook } from "react-icons/fa6";
 import { GiTeacher } from "react-icons/gi";
 import { PiStudentBold } from "react-icons/pi";
 
-const page = () => {
+const page = async () => {
+  const res = await fetchAllEvents({ next: { tags: "event" } });
+
   return (
     <div className="gap-y-10 paddings grid lg:grid-cols-3 md:grid-cols-2 gap-4">
       <div className="w-full grid grid-cols-2 gap-2">
@@ -65,7 +68,9 @@ const page = () => {
         </div>
       </div>
       <Notifications />
-      <EditEvents />
+      <Suspense fallback={<div>Loading...</div>}>
+        <EditEvents data={res} />
+      </Suspense>
     </div>
   );
 };
